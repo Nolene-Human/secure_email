@@ -18,11 +18,11 @@ import unique
 
 yourkey=unique.generate_password()
 
-db_path="/C:/Users/Nina/Desktop/FANG_Scan/database/clients.db"
+db_path="path to database" # !! UPDATE to the path of database !! 
 
 
 # password is stored in os environment
-email_password=os.environ.get('admin_gmail')
+email_password=os.environ.get('environment variable') # !! UPDATE to the environment variable !!
 
 db_entry=database.create_connection(db_path)
 
