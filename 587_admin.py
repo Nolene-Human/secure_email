@@ -12,6 +12,6 @@ name=input ("Enter Name: ")
 
 send=input( "Send payment y/n: ")
 
-server.sendmail('youremail@mail.com',email,'"Hi from Fang port 587') # !! UPDATE to your email address and password!!
+server.sendmail('youremail@mail.com',email,'"Hi from Fang port 587') # !! UPDATE to your email address !!
 
 print('mail sent')
