@@ -37,7 +37,7 @@ def send_email_with_qr():
     server.starttls()
 
     # Login to the email server
-    server.login(from_address, "kzdz cnpi whzo tlla")
+    server.login(from_address, "your password") # !! UPDATE to your gmail app password!!
 
     # Send the email
     text = message.as_string()
