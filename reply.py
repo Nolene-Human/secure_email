@@ -1,3 +1,9 @@
+'''
+PTES Pre-engagement Interaction
+Step 3: Email new customer OTP QR code. 
+'''
+
+
 import smtplib
 import os
 from os.path import basename
