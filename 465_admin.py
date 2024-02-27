@@ -1,7 +1,9 @@
 '''
-This script is inteneded to be used by an administrator who will register a new user into the database.
-Once user has been added it will send an email to the new user with a unique key that will be used to register for MFA.
-Email using port 465. This port is used for SMTPS and uses implicit TLS, meaning the connection is encrypted from the start  
+This script is designed for administrative use to register a new user into the system's database.
+After successful registration, an email is dispatched to the newly registered user.
+The email contains a unique key that the user will use for Multi-Factor Authentication (MFA) registration.
+The email is sent using port 465, which is designated for SMTPS (Simple Mail Transfer Protocol Secure).
+SMTPS uses implicit TLS (Transport Layer Security), ensuring that the connection is encrypted from the outset.
 
 '''
 
