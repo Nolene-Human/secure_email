@@ -1,3 +1,9 @@
+'''
+This script is inteneded to be used by an administrator who will register a new user into the database.
+Once user has been added it will send an email to the new user with a unique key that will be used to register for MFA.
+Email using port 465. This port is used for SMTPS and uses implicit TLS, meaning the connection is encrypted from the start  
+
+'''
 
 import smtplib
 import os
@@ -33,12 +39,10 @@ email_to=input("Enter email address: ")
 name=input ("Enter Name: ")
 current_time=datetime.datetime.now()
 
-
+#create connection to database
 cursor.execute("INSERT INTO clients (email,username,date) VALUES(?,?,?)",(email_to, name,current_time))
 db_entry.commit()
          
-#create connection to database
-
 
 #create email
 em = MIMEMultipart()
@@ -65,10 +69,7 @@ body=(f"""
     Step 4:
     Create your own unique password.
 
-
-    "What's Done Is Done When We Say It's Done"
-
-    from the FAMILY AREA NETWORK GANG
+    from the .................
 
      """)
 
