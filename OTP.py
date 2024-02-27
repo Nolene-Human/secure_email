@@ -12,9 +12,9 @@ def generate_qr(key):
     
     totp=pyotp.totp.TOTP(key)
     uri=pyotp.totp.TOTP(key).provisioning_uri(name="FANG",issuer_name="FANG App")
-    qr=qrcode.make(uri)#.save("QR.png")
+    qr=qrcode.make(uri).save("QR.png")
     #print("QR.png",width=150)    
-    print(qr)
+    #print(qr)
 
 #based on the encryption key value a One time passcode is generated. This OTP generated when code is called match OTP on users application. 
 def generatepin(key):
@@ -23,3 +23,4 @@ def generatepin(key):
     return mfacode
 
 
+generate_qr(key())
