@@ -18,8 +18,8 @@ send=input( "Send payment y/n: ")
 
 if send=='y':
             
-            FROM = 'onlyforshowhack@gmail.com'
-            PASSWORD=os.environ.get('gmail')
+            FROM = 'youremail@gmail.com'  # UPDATE with your email 
+            PASSWORD=os.environ.get('gmail') # UPDATE with your key
             TO = email
                 
             subject=f"Welcome from FANG"
