@@ -1,4 +1,4 @@
-# Secure Email with OTP or Unique Random Passkey
+# Secure Email sending OTP QRCode or Unique Random Passkey
 
 This is a Python-based application designed to send secure emails. It uses Google's SMTP server and generates either a unique random key or One-Time-Passcode (OTP) QR Code for each email.
 
